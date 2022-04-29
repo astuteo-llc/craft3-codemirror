@@ -1,5 +1,5 @@
 {
-    "name": "luwes/craft3-codemirror",
+    "name": "astuteo/craft4-codemirror",
     "description": "Add the awesome in-browser code editor CodeMirror as a field type.",
     "type": "craft-plugin",
     "version": "1.0.2",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-beta.20"
+        "craftcms/cms": "^4.0.0-alpha"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +34,16 @@
         "handle": "code-mirror",
         "changelogUrl": "https://raw.githubusercontent.com/luwes/craft3-codemirror/master/CHANGELOG.md",
         "class": "luwes\\codemirror\\CodeMirror"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "craftcms/rector": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
